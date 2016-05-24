@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4290A893728CEA8460356124 /* Pods_Hashlearn_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4E11973A6F292AE38CCAC /* Pods_Hashlearn_IOS.framework */; };
+		6B3274281CF45A6B000A926F /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274271CF45A6B000A926F /* IntroVC.swift */; };
 		6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */; };
 		6BBD4AD91CF44C6E007FAA52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */; };
 		6BBD4ADC1CF44C6E007FAA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD4ADA1CF44C6E007FAA52 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09074944976790200AB75C7A /* Pods-Hashlearn IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hashlearn IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS.release.xcconfig"; sourceTree = "<group>"; };
+		6B3274271CF45A6B000A926F /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		6BBD4AD31CF44C6E007FAA52 /* Hashlearn IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hashlearn IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		6BBD4ADD1CF44C6E007FAA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BBD4AE01CF44C6E007FAA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BBD4AE21CF44C6E007FAA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFDC6D3DC37B01318604E27 /* Pods-Hashlearn IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hashlearn IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE4E11973A6F292AE38CCAC /* Pods_Hashlearn_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hashlearn_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4290A893728CEA8460356124 /* Pods_Hashlearn_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125AE0C972B16E0CEE9D5D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE4E11973A6F292AE38CCAC /* Pods_Hashlearn_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		681BD9EDC9B2A5526DCE3DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CFDC6D3DC37B01318604E27 /* Pods-Hashlearn IOS.debug.xcconfig */,
+				09074944976790200AB75C7A /* Pods-Hashlearn IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6BBD4ACA1CF44C6E007FAA52 = {
 			isa = PBXGroup;
 			children = (
 				6BBD4AD51CF44C6E007FAA52 /* Hashlearn IOS */,
 				6BBD4AD41CF44C6E007FAA52 /* Products */,
+				681BD9EDC9B2A5526DCE3DAB /* Pods */,
+				125AE0C972B16E0CEE9D5D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,9 @@
 		6BBD4AD51CF44C6E007FAA52 /* Hashlearn IOS */ = {
 			isa = PBXGroup;
 			children = (
+				6BBD4AEA1CF44F79007FAA52 /* Controllers */,
+				6BBD4AE91CF44F73007FAA52 /* Views */,
+				6BBD4AE81CF44F69007FAA52 /* Models */,
 				6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */,
 				6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */,
 				6BBD4ADA1CF44C6E007FAA52 /* Main.storyboard */,
@@ -64,6 +93,28 @@
 			path = "Hashlearn IOS";
 			sourceTree = "<group>";
 		};
+		6BBD4AE81CF44F69007FAA52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6BBD4AE91CF44F73007FAA52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6BBD4AEA1CF44F79007FAA52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B3274271CF45A6B000A926F /* IntroVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BBD4AE51CF44C6E007FAA52 /* Build configuration list for PBXNativeTarget "Hashlearn IOS" */;
 			buildPhases = (
+				36E8332740D5DFB0BAB1099E /* 📦 Check Pods Manifest.lock */,
 				6BBD4ACF1CF44C6E007FAA52 /* Sources */,
 				6BBD4AD01CF44C6E007FAA52 /* Frameworks */,
 				6BBD4AD11CF44C6E007FAA52 /* Resources */,
+				4DF28684DEC19FB6ACF548C2 /* 📦 Embed Pods Frameworks */,
+				50EC97B0078E1A96A92D4474 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +184,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36E8332740D5DFB0BAB1099E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF28684DEC19FB6ACF548C2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50EC97B0078E1A96A92D4474 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BBD4ACF1CF44C6E007FAA52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +239,7 @@
 			files = (
 				6BBD4AD91CF44C6E007FAA52 /* ViewController.swift in Sources */,
 				6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */,
+				6B3274281CF45A6B000A926F /* IntroVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +350,7 @@
 		};
 		6BBD4AE61CF44C6E007FAA52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFDC6D3DC37B01318604E27 /* Pods-Hashlearn IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Hashlearn IOS/Info.plist";
@@ -258,6 +362,7 @@
 		};
 		6BBD4AE71CF44C6E007FAA52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09074944976790200AB75C7A /* Pods-Hashlearn IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Hashlearn IOS/Info.plist";
@@ -286,6 +391,7 @@
 				6BBD4AE71CF44C6E007FAA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

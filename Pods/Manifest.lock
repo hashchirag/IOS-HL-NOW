@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (3.4.0)
+  - EAIntroView (2.9.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - EAIntroView (~> 2.9.0)
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+
+PODFILE CHECKSUM: e74fb678218a2a6d29acae6133b02aea8ee35818
+
+COCOAPODS: 1.0.0
