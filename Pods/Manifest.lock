@@ -3,16 +3,34 @@ PODS:
   - EAIntroView (2.9.0):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
+  - Moya (6.4.0):
+    - Moya/Core (= 6.4.0)
+  - Moya-SwiftyJSONMapper (1.0.3):
+    - Moya-SwiftyJSONMapper/Core (= 1.0.3)
+  - Moya-SwiftyJSONMapper/Core (1.0.3):
+    - Moya
+    - SwiftyJSON (~> 2.3.2)
+  - Moya/Core (6.4.0):
+    - Alamofire (~> 3.0)
+    - Result (~> 2.0)
+  - Result (2.0.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
   - EAIntroView (~> 2.9.0)
+  - Moya
+  - Moya-SwiftyJSONMapper
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  Moya: 4d526954c8afd79820991393d40d7d8af756ceee
+  Moya-SwiftyJSONMapper: 07f2386184685079a6eb06973584431151b2e0c3
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: e74fb678218a2a6d29acae6133b02aea8ee35818
+PODFILE CHECKSUM: c02faff2cdf65e7c6d470406e1e05b4c294162e6
 
 COCOAPODS: 1.0.0

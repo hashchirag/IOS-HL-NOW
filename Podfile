@@ -9,5 +9,7 @@ target 'Hashlearn IOS' do
 
 pod 'EAIntroView', '~> 2.9.0'
 pod 'Alamofire', '~> 3.4'
+pod ‘Moya’
+pod "Moya-SwiftyJSONMapper"
 
 end

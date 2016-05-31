@@ -16,7 +16,7 @@
 
 import EAIntroView
 
-class IntroVC: UIViewController {
+class IntroVC: UIViewController , EAIntroDelegate{
     
     
     @IBOutlet weak var mIntroView: EAIntroView!
@@ -32,7 +32,16 @@ class IntroVC: UIViewController {
         }
         
         mIntroView.pages = mPagesArray
+        mIntroView.delegate = self
     }
     
+    func introDidFinish(introView: EAIntroView!, wasSkipped: Bool) {
+        
+        if(wasSkipped){
+            print("Entered")
+        }
+        
+        performSegueWithIdentifier("goToLoginPage", sender: nil)
+    }
     
 }

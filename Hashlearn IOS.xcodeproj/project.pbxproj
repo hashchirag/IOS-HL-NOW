@@ -9,23 +9,52 @@
 /* Begin PBXBuildFile section */
 		4290A893728CEA8460356124 /* Pods_Hashlearn_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4E11973A6F292AE38CCAC /* Pods_Hashlearn_IOS.framework */; };
 		6B3274281CF45A6B000A926F /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274271CF45A6B000A926F /* IntroVC.swift */; };
+		6B32742A1CF4659B000A926F /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274291CF4659B000A926F /* SplashScreenVC.swift */; };
+		6B3274301CF47087000A926F /* LoginPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32742F1CF47087000A926F /* LoginPageVC.swift */; };
+		6B3274321CF489EA000A926F /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274311CF489EA000A926F /* AppButton.swift */; };
+		6B3274351CF49371000A926F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274341CF49371000A926F /* UIColor+Hex.swift */; };
+		6B3274371CF56F2F000A926F /* StudentLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274361CF56F2F000A926F /* StudentLoginVC.swift */; };
+		6B3274391CF56F43000A926F /* TutorLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3274381CF56F43000A926F /* TutorLoginVC.swift */; };
+		6B6F2D211CF585C10060E9A4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6F2D201CF585C10060E9A4 /* FBSDKLoginKit.framework */; };
+		6B6F2D231CF58D110060E9A4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6F2D221CF58D110060E9A4 /* FBSDKCoreKit.framework */; };
+		6B6F2D2C1CF5C7370060E9A4 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */; };
+		6B6F2D2E1CF6BAFE0060E9A4 /* AppStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */; };
 		6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */; };
 		6BBD4AD91CF44C6E007FAA52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */; };
 		6BBD4ADC1CF44C6E007FAA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD4ADA1CF44C6E007FAA52 /* Main.storyboard */; };
 		6BBD4ADE1CF44C6E007FAA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD4ADD1CF44C6E007FAA52 /* Assets.xcassets */; };
 		6BBD4AE11CF44C6E007FAA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD4ADF1CF44C6E007FAA52 /* LaunchScreen.storyboard */; };
+		6BC8BF0D1CF6D28900D468F3 /* MyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC8BF0C1CF6D28900D468F3 /* MyService.swift */; };
+		6BC8BF0F1CF7085400D468F3 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC8BF0E1CF7085400D468F3 /* BaseModel.swift */; };
+		6BC8BF111CF70A5000D468F3 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC8BF101CF70A5000D468F3 /* Tutor.swift */; };
+		6BC8BF131CF70DE300D468F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC8BF121CF70DE300D468F3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09074944976790200AB75C7A /* Pods-Hashlearn IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hashlearn IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS.release.xcconfig"; sourceTree = "<group>"; };
 		6B3274271CF45A6B000A926F /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		6B3274291CF4659B000A926F /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		6B32742D1CF46C18000A926F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B32742E1CF46C18000A926F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B32742F1CF47087000A926F /* LoginPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageVC.swift; sourceTree = "<group>"; };
+		6B3274311CF489EA000A926F /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		6B3274341CF49371000A926F /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		6B3274361CF56F2F000A926F /* StudentLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLoginVC.swift; sourceTree = "<group>"; };
+		6B3274381CF56F43000A926F /* TutorLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorLoginVC.swift; sourceTree = "<group>"; };
+		6B6F2D201CF585C10060E9A4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6B6F2D221CF58D110060E9A4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6B6F2D261CF5B2F00060E9A4 /* Hashlearn IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashlearn IOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AppStrings.strings; sourceTree = "<group>"; };
 		6BBD4AD31CF44C6E007FAA52 /* Hashlearn IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hashlearn IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6BBD4ADB1CF44C6E007FAA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BBD4ADD1CF44C6E007FAA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6BBD4AE01CF44C6E007FAA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BBD4AE21CF44C6E007FAA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC8BF0C1CF6D28900D468F3 /* MyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyService.swift; sourceTree = "<group>"; };
+		6BC8BF0E1CF7085400D468F3 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		6BC8BF101CF70A5000D468F3 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		6BC8BF121CF70DE300D468F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8CFDC6D3DC37B01318604E27 /* Pods-Hashlearn IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hashlearn IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hashlearn IOS/Pods-Hashlearn IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE4E11973A6F292AE38CCAC /* Pods_Hashlearn_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hashlearn_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +65,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4290A893728CEA8460356124 /* Pods_Hashlearn_IOS.framework in Frameworks */,
+				6B6F2D231CF58D110060E9A4 /* FBSDKCoreKit.framework in Frameworks */,
+				6B6F2D211CF585C10060E9A4 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +90,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6B3274331CF49333000A926F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B3274341CF49371000A926F /* UIColor+Hex.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6B6F2D1B1CF57B690060E9A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B6F2D221CF58D110060E9A4 /* FBSDKCoreKit.framework */,
+				6B6F2D201CF585C10060E9A4 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B6F2D241CF5B27C0060E9A4 /* HeaderFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B6F2D261CF5B2F00060E9A4 /* Hashlearn IOS-Bridging-Header.h */,
+			);
+			name = HeaderFiles;
+			sourceTree = "<group>";
+		};
+		6B6F2D2A1CF5C7270060E9A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		6BBD4ACA1CF44C6E007FAA52 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +144,10 @@
 		6BBD4AD51CF44C6E007FAA52 /* Hashlearn IOS */ = {
 			isa = PBXGroup;
 			children = (
+				6B6F2D2A1CF5C7270060E9A4 /* Utils */,
+				6B6F2D241CF5B27C0060E9A4 /* HeaderFiles */,
+				6B6F2D1B1CF57B690060E9A4 /* Frameworks */,
+				6B3274331CF49333000A926F /* Extensions */,
 				6BBD4AEA1CF44F79007FAA52 /* Controllers */,
 				6BBD4AE91CF44F73007FAA52 /* Views */,
 				6BBD4AE81CF44F69007FAA52 /* Models */,
@@ -89,6 +157,8 @@
 				6BBD4ADD1CF44C6E007FAA52 /* Assets.xcassets */,
 				6BBD4ADF1CF44C6E007FAA52 /* LaunchScreen.storyboard */,
 				6BBD4AE21CF44C6E007FAA52 /* Info.plist */,
+				6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */,
+				6BC8BF0C1CF6D28900D468F3 /* MyService.swift */,
 			);
 			path = "Hashlearn IOS";
 			sourceTree = "<group>";
@@ -96,6 +166,9 @@
 		6BBD4AE81CF44F69007FAA52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6BC8BF0E1CF7085400D468F3 /* BaseModel.swift */,
+				6BC8BF101CF70A5000D468F3 /* Tutor.swift */,
+				6BC8BF121CF70DE300D468F3 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -103,6 +176,7 @@
 		6BBD4AE91CF44F73007FAA52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6B3274311CF489EA000A926F /* AppButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -111,6 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				6B3274271CF45A6B000A926F /* IntroVC.swift */,
+				6B3274291CF4659B000A926F /* SplashScreenVC.swift */,
+				6B32742F1CF47087000A926F /* LoginPageVC.swift */,
+				6B3274361CF56F2F000A926F /* StudentLoginVC.swift */,
+				6B3274381CF56F43000A926F /* TutorLoginVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BBD4AE11CF44C6E007FAA52 /* LaunchScreen.storyboard in Resources */,
+				6B6F2D2E1CF6BAFE0060E9A4 /* AppStrings.strings in Resources */,
 				6BBD4ADE1CF44C6E007FAA52 /* Assets.xcassets in Resources */,
 				6BBD4ADC1CF44C6E007FAA52 /* Main.storyboard in Resources */,
 			);
@@ -237,9 +316,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3274371CF56F2F000A926F /* StudentLoginVC.swift in Sources */,
+				6B3274351CF49371000A926F /* UIColor+Hex.swift in Sources */,
+				6B6F2D2C1CF5C7370060E9A4 /* ApiConstants.swift in Sources */,
+				6B3274391CF56F43000A926F /* TutorLoginVC.swift in Sources */,
+				6B3274301CF47087000A926F /* LoginPageVC.swift in Sources */,
 				6BBD4AD91CF44C6E007FAA52 /* ViewController.swift in Sources */,
+				6BC8BF131CF70DE300D468F3 /* User.swift in Sources */,
+				6BC8BF0F1CF7085400D468F3 /* BaseModel.swift in Sources */,
 				6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */,
+				6B3274321CF489EA000A926F /* AppButton.swift in Sources */,
 				6B3274281CF45A6B000A926F /* IntroVC.swift in Sources */,
+				6BC8BF0D1CF6D28900D468F3 /* MyService.swift in Sources */,
+				6BC8BF111CF70A5000D468F3 /* Tutor.swift in Sources */,
+				6B32742A1CF4659B000A926F /* SplashScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +339,7 @@
 		6BBD4ADA1CF44C6E007FAA52 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6BBD4ADB1CF44C6E007FAA52 /* Base */,
+				6B32742D1CF46C18000A926F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -257,7 +347,7 @@
 		6BBD4ADF1CF44C6E007FAA52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6BBD4AE01CF44C6E007FAA52 /* Base */,
+				6B32742E1CF46C18000A926F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -353,10 +443,21 @@
 			baseConfigurationReference = 8CFDC6D3DC37B01318604E27 /* Pods-Hashlearn IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EAIntroView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EARestrictedScrollView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Simplicity\"",
+					"\"/Users/chiragshenoy/Documents/FacebookSDK\"",
+				);
 				INFOPLIST_FILE = "Hashlearn IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashlearn.now.Hashlearn-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hashlearn IOS/Hashlearn IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -365,10 +466,12 @@
 			baseConfigurationReference = 09074944976790200AB75C7A /* Pods-Hashlearn IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Hashlearn IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hashlearn.now.Hashlearn-IOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hashlearn IOS/Hashlearn IOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
