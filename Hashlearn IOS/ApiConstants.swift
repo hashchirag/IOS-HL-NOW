@@ -10,7 +10,9 @@ import Foundation
 
 class ApiConstants {
     
-    internal static let BASE_URL = "abs"
+    internal static let BASE_URL = "http://staging-now.hashlearn.com"
+    internal static let TUTOR_FB_LOGIN_URL = "/api/users/tutorFacebookLogin/"
+    
     
     
 }

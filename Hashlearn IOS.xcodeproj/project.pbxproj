@@ -18,7 +18,8 @@
 		6B6F2D211CF585C10060E9A4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6F2D201CF585C10060E9A4 /* FBSDKLoginKit.framework */; };
 		6B6F2D231CF58D110060E9A4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6F2D221CF58D110060E9A4 /* FBSDKCoreKit.framework */; };
 		6B6F2D2C1CF5C7370060E9A4 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */; };
-		6B6F2D2E1CF6BAFE0060E9A4 /* AppStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */; };
+		6BB204D31CFD65F600933F9E /* UserSessionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB204D21CFD65F600933F9E /* UserSessionUtils.swift */; };
+		6BB204D51CFD682C00933F9E /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB204D41CFD682C00933F9E /* AppConstants.swift */; };
 		6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */; };
 		6BBD4AD91CF44C6E007FAA52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */; };
 		6BBD4ADC1CF44C6E007FAA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBD4ADA1CF44C6E007FAA52 /* Main.storyboard */; };
@@ -45,7 +46,8 @@
 		6B6F2D221CF58D110060E9A4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		6B6F2D261CF5B2F00060E9A4 /* Hashlearn IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashlearn IOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
-		6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AppStrings.strings; sourceTree = "<group>"; };
+		6BB204D21CFD65F600933F9E /* UserSessionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionUtils.swift; sourceTree = "<group>"; };
+		6BB204D41CFD682C00933F9E /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		6BBD4AD31CF44C6E007FAA52 /* Hashlearn IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hashlearn IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BBD4AD61CF44C6E007FAA52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BBD4AD81CF44C6E007FAA52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				6B6F2D2B1CF5C7370060E9A4 /* ApiConstants.swift */,
+				6BB204D21CFD65F600933F9E /* UserSessionUtils.swift */,
+				6BB204D41CFD682C00933F9E /* AppConstants.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -157,7 +161,6 @@
 				6BBD4ADD1CF44C6E007FAA52 /* Assets.xcassets */,
 				6BBD4ADF1CF44C6E007FAA52 /* LaunchScreen.storyboard */,
 				6BBD4AE21CF44C6E007FAA52 /* Info.plist */,
-				6B6F2D2D1CF6BAFE0060E9A4 /* AppStrings.strings */,
 				6BC8BF0C1CF6D28900D468F3 /* MyService.swift */,
 			);
 			path = "Hashlearn IOS";
@@ -255,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BBD4AE11CF44C6E007FAA52 /* LaunchScreen.storyboard in Resources */,
-				6B6F2D2E1CF6BAFE0060E9A4 /* AppStrings.strings in Resources */,
 				6BBD4ADE1CF44C6E007FAA52 /* Assets.xcassets in Resources */,
 				6BBD4ADC1CF44C6E007FAA52 /* Main.storyboard in Resources */,
 			);
@@ -318,6 +320,7 @@
 			files = (
 				6B3274371CF56F2F000A926F /* StudentLoginVC.swift in Sources */,
 				6B3274351CF49371000A926F /* UIColor+Hex.swift in Sources */,
+				6BB204D31CFD65F600933F9E /* UserSessionUtils.swift in Sources */,
 				6B6F2D2C1CF5C7370060E9A4 /* ApiConstants.swift in Sources */,
 				6B3274391CF56F43000A926F /* TutorLoginVC.swift in Sources */,
 				6B3274301CF47087000A926F /* LoginPageVC.swift in Sources */,
@@ -326,6 +329,7 @@
 				6BC8BF0F1CF7085400D468F3 /* BaseModel.swift in Sources */,
 				6BBD4AD71CF44C6E007FAA52 /* AppDelegate.swift in Sources */,
 				6B3274321CF489EA000A926F /* AppButton.swift in Sources */,
+				6BB204D51CFD682C00933F9E /* AppConstants.swift in Sources */,
 				6B3274281CF45A6B000A926F /* IntroVC.swift in Sources */,
 				6BC8BF0D1CF6D28900D468F3 /* MyService.swift in Sources */,
 				6BC8BF111CF70A5000D468F3 /* Tutor.swift in Sources */,

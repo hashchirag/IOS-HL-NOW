@@ -46,15 +46,41 @@ class TutorLoginVC : UIViewController , FBSDKLoginButtonDelegate{
                     print("Success - \(tutorResponseObject.jwt_payload)")
                     print("Success - \(tutorResponseObject.state)")
                     print("Success - \(tutorResponseObject.status)")
+                    
+                    self.checkProcessAndProceed(tutorResponseObject)
                 } catch {
                     print("Error Parsing the JSON\(error)")
                 }
                 
             case let .Failure(error):
-                print("Endpoint failure\(error)")
+                print("Network call failure\(error)")
             }
         }
         
+    }
+    
+    func saveDataAndProceed(tutorResponseObject : Tutor){
+        UserSessionUtils.saveTutorFBLoginData(tutorResponseObject)
+        
+    }
+    
+    func checkProcessAndProceed(tutorResponseObject : Tutor){
+        
+        if(tutorResponseObject.status == AppConstants.success){
+            
+            // Case of tutor trying to sign up to FB from app.
+            if(tutorResponseObject.process == AppConstants.SIGNUP){
+                print("Sign up not allowed")
+            }
+                
+                // Case of tutor logging in.
+            else if (tutorResponseObject.process == AppConstants.LOGIN) {
+                self.saveDataAndProceed(tutorResponseObject)
+            }
+        }
+        else if (tutorResponseObject.status == AppConstants.ERROR){
+            print("Error while logging in through facebook")
+        }
     }
     
     

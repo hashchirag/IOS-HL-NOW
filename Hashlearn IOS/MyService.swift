@@ -12,20 +12,18 @@ import Moya
 enum MyService{
     
     case TutorFBLogin(String)
-    case CollegeList
 }
 
 
 extension MyService: TargetType {
-    var baseURL: NSURL { return NSURL(string: "http://staging-now.hashlearn.com")! }
+    var baseURL: NSURL { return NSURL(string: ApiConstants.BASE_URL)! }
     
     var path: String {
         switch self {
         case .TutorFBLogin(_):
-            return "/api/users/tutorFacebookLogin/"
+            return ApiConstants.TUTOR_FB_LOGIN_URL
             
-        case .CollegeList :
-            return "/api/users/tutor/get-colleges/"
+            
         }
     }
     var method: Moya.Method {
@@ -33,14 +31,14 @@ extension MyService: TargetType {
         case .TutorFBLogin(_):
             return .POST
             
-        case .CollegeList:
-            return .GET
+            
         }
     }
     var parameters: [String: AnyObject]? {
         switch self {
         case .TutorFBLogin(let access_token):
             return ["access_token": access_token]
+            
         default : return nil
         }
     }
@@ -48,8 +46,6 @@ extension MyService: TargetType {
         switch self {
         case .TutorFBLogin(let access_token):
             return "Sample data \(access_token)".UTF8EncodedData
-        case .CollegeList :
-            return "Sample Data".UTF8EncodedData
         }
     }
 }
