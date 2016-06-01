@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hashlearn IOS/TutorLoginVC.swift"
-            timestampString = "486367468.333625"
+            timestampString = "486458456.33984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "runFacebookLoginNetworkCall(_:)"
             landmarkType = "5">
          </BreakpointContent>

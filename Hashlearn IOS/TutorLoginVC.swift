@@ -10,6 +10,8 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Moya
+import SideMenu
+
 
 class TutorLoginVC : UIViewController , FBSDKLoginButtonDelegate{
     
@@ -21,6 +23,17 @@ class TutorLoginVC : UIViewController , FBSDKLoginButtonDelegate{
         super.viewDidLoad()
         mFBLoignButton.delegate = self
         self.networkCallProvider = MoyaProvider<MyService>()
+        
+        // Define the menus
+        let menuLeftNavigationController = UISideMenuNavigationController()
+        menuLeftNavigationController.leftSide = true
+        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+        
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
@@ -79,7 +92,13 @@ class TutorLoginVC : UIViewController , FBSDKLoginButtonDelegate{
             }
         }
         else if (tutorResponseObject.status == AppConstants.ERROR){
-            print("Error while logging in through facebook")
+            //            print("Error while logging in through facebook")
+            
+            //Code to go to the next page. For testing purpose only.
+            
+            presentViewController(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+            
+            
         }
     }
     
