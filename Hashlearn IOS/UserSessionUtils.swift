@@ -14,12 +14,11 @@ class UserSessionUtils {
     
     // Save Details related to Tutor FB Login
     static func saveTutorFBLoginData(tutor : Tutor) {
-        defaults.setObject(tutor.jwt_payload, forKey: AppConstants.AUTH_TOKEN)
-        defaults.setObject(tutor.jwt_payload, forKey: AppConstants.USER_ID)
-        defaults.setObject(tutor.username, forKey: AppConstants.USERNAME)
-        defaults.setObject(AppConstants.USER_TYPE_TUTOR, forKey: AppConstants.USER_TYPE)
-        defaults.setObject(true, forKey: AppConstants.IS_FROM_FACEBOOK)
-        
+        PreferenceUtils.setString(tutor.jwt_payload, key: AppConstants.AUTH_TOKEN)
+        PreferenceUtils.setString(tutor.jwt_payload, key: AppConstants.USER_ID)
+        PreferenceUtils.setString(tutor.username, key: AppConstants.USERNAME)
+        PreferenceUtils.setString(AppConstants.USER_TYPE_TUTOR, key: AppConstants.USER_TYPE)
+        PreferenceUtils.setBool(true, key: AppConstants.IS_FROM_FACEBOOK)
     }
     
 }
